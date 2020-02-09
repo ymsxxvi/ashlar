@@ -1,0 +1,442 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "ashlar";
+    src: url(../font/AshlarGX.ttf);
+    font-variation-settings: 'wdth' 500;
+}
+@font-face {
+    font-family: "sourcesans";
+    src: url(../font/SourceSansVariable-Roman.ttf);
+}
+
+html {
+    background-color: #f7f7eb;
+}
+
+hr {
+    margin: 0;
+    border-top: 1px solid #000000;
+}
+
+/*-- intro header --*/
+.l-intro,.r-intro,.c-intro{
+    height: 730px;
+}
+.header-intro {
+    font-size: 80px;
+    font-family: "ashlar";
+    font-variation-settings: 'wdth' 500;
+    text-align: center;
+    color: #000000;
+    line-height: 98px;
+    margin:0;
+    width: 100%;
+    z-index: -2;
+    position: relative;
+    top: -600px;
+    height: 0;
+}
+.l-intro:hover ~ .header-intro {
+    font-variation-settings: 'wdth' 0;
+    transition: 1s;
+}
+.r-intro:hover ~ .header-intro {
+    font-variation-settings: 'wdth' 1000;
+    transition: 1s;
+}
+.c-intro:hover ~ .header-intro {
+    font-variation-settings: 'wdth' 500;
+    transition: 1s;
+}
+
+/*-- intro header end --*/
+/*-- intro text --*/
+.intro2 {
+    margin: 50px;
+    margin-bottom: 0px;
+}
+.title {
+    font-family: "ashlar";
+    font-variation-settings: 'wdth' 500;
+    font-size: 1.875em;
+    margin: 0;
+}
+.t-span {
+    font-variation-settings: 'wdth' 1000;
+}
+
+
+.txt {
+    font-size:  22px;
+    font-family: "sourcesans";
+    font-variation-settings: 'wght' 300;
+    line-height: 27px;
+    margin: 0;
+    margin-bottom: 150px;
+}
+/*-- intro text end --*/
+/*-- features text --*/
+.features1, .features2 {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.features1 {
+    background-image: url(../images/features1.png);
+    height: 425px;
+}
+.features2 {
+    background-image: url(../images/features2.png);
+    height: auto;
+    background-position: top;
+}
+.features3 {
+    font-family: "ashlar";
+    font-size: 500px;
+    line-height: 0;margin: 0px;
+    overflow: hidden;
+    height: 400px;
+}
+.features3 p {
+    position: relative;
+    top: -400px;
+    height: 400px;
+    animation: nloop 5s infinite;
+}
+@keyframes nloop {
+    0% {font-variation-settings: 'wdth' 0;}
+    50% {font-variation-settings: 'wdth' 1000;}
+    100% {font-variation-settings: 'wdth' 0;}
+}
+.loopfeature {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+/*-- features text end --*/
+/*-- in use 1(here comes the mess lmao) --*/
+.inuse1 {
+    margin: 150px 0;
+}
+.iu-name {
+    font-size: 114px;
+    font-family: "ashlar";
+    font-variation-settings: 'wdth' 500;
+    margin:0;
+}
+.iu-abt {
+    animation-name: abt;
+}
+.iu-info1 {
+    animation-name: info1;
+}
+.iu-info2 {
+    text-align: right;
+    animation-name: info2;
+}
+.iu-abt, .iu-info1, .iu-info2 {
+    font-size: 28px;
+    font-family: "sourcesans";
+    font-variation-settings: 'wght' 400;
+    line-height: 29.59px;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.iu-info1, .iu-info2 {
+    font-variation-settings: 'wght' 300;
+}
+.iu-info1 span{
+    font-variation-settings: 'wght' 400;
+}
+.iu-info2 span {
+    font-family: "ashlar";
+    font-variation-settings: 'wdth' 500;
+}
+@keyframes abt {
+    0% {opacity: 0;position: relative; left: -50px;}
+    20% {opacity: 0;}
+    40% {opacity: 1;position:relative;left:0;}
+    80% {opacity: 1;position:relative;left:0;}
+    100% {opacity: 0;position: relative; left: -50px;}
+}
+@keyframes info1{
+    0% {opacity: 0}
+    40% {opacity: 0}
+    60% {opacity: 1}
+    80% {opacity: 1}
+    100% {opacity: 0}
+}
+@keyframes info2{
+    0% {opacity: 0}
+    40% {opacity: 0}
+    60% {opacity: 1}
+    80% {opacity: 1}
+    100% {opacity: 0}
+}
+
+#iu1an1, #iu1an2, #iu1an3, #iu1an4 {
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#iu1an1 {
+    animation-name: iu1an1;
+}
+@keyframes iu1an1 {
+    0% {font-variation-settings: 'wdth' 500;}
+    20% {font-variation-settings: 'wdth' 500;}
+    40% {font-variation-settings: 'wdth' 610;}
+    80% {font-variation-settings: 'wdth' 610;}
+    100% {font-variation-settings: 'wdth' 500;}
+}
+#iu1an2 {
+    animation-name: iu1an2;
+}
+@keyframes iu1an2 {
+    0% {font-variation-settings: 'wdth' 500;}
+    20% {font-variation-settings: 'wdth' 500;}
+    40% {font-variation-settings: 'wdth' 910;}
+    80% {font-variation-settings: 'wdth' 910;}
+    100% {font-variation-settings: 'wdth' 500;}
+}
+#iu1an3 {
+    animation-name: iu1an3;
+}
+@keyframes iu1an3 {
+    0% {font-variation-settings: 'wdth' 500;}
+    20% {font-variation-settings: 'wdth' 500;}
+    40% {font-variation-settings: 'wdth' 1000;}
+    80% {font-variation-settings: 'wdth' 1000;}
+    100% {font-variation-settings: 'wdth' 500;}
+}
+#iu1an4 {
+    animation-name: iu1an4;
+}
+@keyframes iu1an4 {
+    0% {font-variation-settings: 'wdth' 500;}
+    20% {font-variation-settings: 'wdth' 500;}
+    40% {font-variation-settings: 'wdth' 0;}
+    80% {font-variation-settings: 'wdth' 0;}
+    100% {font-variation-settings: 'wdth' 500;}
+}
+/*-- in use 1 end --*/
+/*-- in use 2 --*/
+.inuse2{
+    margin: 150px 0;
+    height: 686px;
+}
+.iu2left, .iu2right {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.iu2left {
+    background-image: url(../images/poster1.jpg);
+}
+.iu2right {
+    background-image: url(../images/poster2.jpg);
+}
+/*-- in use 2 end --*/
+/*-- in use 3 --*/
+.inuse3{
+    margin: 150px 0;
+    text-align: center;
+}
+.iu3-head1, .iu3-head2 {
+    font-family: "ashlar";
+    font-variation-settings: 'wdth' 500;
+    font-size: 81px;
+    margin: 0;
+    width: 0px;
+    transition: 1s;
+    white-space: nowrap;
+}
+.iu3-head1 {
+    margin-top: 60px;
+}
+.iu3-lead, .iu3-body {
+    font-family: "sourcesans";
+    font-size: 18px;
+    transition: 1.2s;
+}
+.iu3-lead {
+    width: 0;
+    white-space: nowrap;
+    margin-top: 0;
+    position: relative;
+    top: -15px;
+
+}
+.iu3-body {
+    text-align: left;
+    width: 50%;
+    height: 160px;
+    overflow: hidden;
+    margin-top: 45px;
+    margin-bottom: 60px;
+    font-variation-settings: 'wght' 300;
+}
+.iu3-wrap:hover .iu3-head1 {
+    width: 100%;
+    font-variation-settings: 'wdth' 880;
+    transition: 1s;
+}
+.iu3-wrap:hover .iu3-head2 {
+    width: 100%;
+    font-variation-settings: 'wdth' 1000;
+    transition: 1s;
+}
+.iu3-wrap:hover .iu3-lead {
+    width: 100%;
+    transition: 1.2s;
+}
+.iu3-wrap:hover .iu3-body {
+    width: 100%;
+    transition: 1.2s;
+}
+/*-- in use 3 end --*/
+/*-- in use 4 --*/
+.iu4-main {
+    background-image: url(../images/poster3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 670px;
+    margin: 150px 0;
+    transition: 1s;
+}
+.iu4-left, .iu4-right {
+    list-style: none;
+    color: #ffffff;
+    font-family: "ashlar";
+    font-size: 60px;
+    line-height: 75px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 280px;
+    font-variation-settings: 'wdth' 500;
+}
+.iu4-right {
+    text-align: right;
+}
+#iu4-wide, #iu4-sml {
+    transition: 1s;
+}
+.iu4-main:hover div ul li #iu4-wide{
+    font-variation-settings: 'wdth' 1000;
+    transition: 1s;
+}
+.iu4-main:hover div ul li #iu4-sml{
+    font-variation-settings: 'wdth' 0;
+    transition: 1s;
+}
+/*-- in use 4 end --*/
+/*-- poster 1 --*/
+.poster1 {
+    margin: 150px 0;
+    font-family: "ashlar";
+    font-variation-settings: 'wdth' 500;
+    font-size: 60px;
+    line-height: 72px;
+    transition: .5s;
+}
+.ps1 p span{
+    transition: .3s ease-out;
+}
+.ps1 p{
+    margin: 25px 0;
+}
+#ps1_1:hover,#ps1_2:hover,#ps1_3:hover,#ps1_4:hover,#ps1_5:hover,#ps1_6:hover,#ps1_7:hover,#ps1_8:hover,#ps1_9:hover,#ps1_10:hover,#ps1_11:hover,#ps1_12:hover,#ps1_13:hover,#ps1_14:hover,#ps1_15:hover, #ps1_16:hover, #ps1_missed:hover, #ps1_missed2:hover, #ps1_missed3:hover
+{
+    font-variation-settings: 'wdth' 1000;
+    transition: .3s;
+}
+/*-- poster 1 end --*/
+/*-- poster 2--*/
+.poster2 {
+    font-family: "ashlar";
+    font-size: 285px;
+    text-align: left;
+}
+.outro {
+    margin: 0;
+    height: 0;
+    position: relative;
+    top: -650px;
+    width: 100%;
+    z-index: -3;
+    line-height: 240px;
+}
+
+.l-outro,.r-outro{
+    height: 750px;
+}
+.ps2_1 {
+    font-variation-settings: 'wdth' 0;
+    transition: 1s;
+}
+.ps2_2 {
+    font-variation-settings: 'wdth' 770;
+    transition: .5s;
+}
+.ps2_3 {
+    font-variation-settings: 'wdth' 1000;
+    transition: .5s;
+}
+.ps2_4 {
+    font-variation-settings: 'wdth' 0;
+    transition: 1s;
+}
+
+.l-outro:hover ~ p .ps2_1 {
+    font-variation-settings: 'wdth' 590;
+    transition: .5s;
+}
+.l-outro:hover ~ p .ps2_2 {
+    font-variation-settings: 'wdth' 0;
+    transition: .7s;
+}
+.l-outro:hover ~ p .ps2_3 {
+    font-variation-settings: 'wdth' 0;
+    transition: .8s;
+}
+.l-outro:hover ~ p .ps2_4 {
+    font-variation-settings: 'wdth' 1000;
+    transition: .5s;
+}
+/*-- poster 2  --*/
+/*-- footer --*/
+footer {
+    height: 160px;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+.ft {
+    color: #fff;
+    margin: 0;
+    font-family: "ashlar";
+    text-align: center;
+    margin-top: 25px;
+    font-size: 27px;
+    animation: foot 5s infinite ease;
+}
+.ft-line {
+    position: relative;
+    top: -20px;
+}
+@keyframes foot {
+    0% {font-variation-settings: 'wdth' 0}
+    50% {font-variation-settings: 'wdth' 1000}
+    100% {font-variation-settings: 'wdth' 0}
+}
+.ft-info {
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-family: "sourcesans";
+    font-variation-settings: 'wght' 100;
+    letter-spacing: 2px;
+    position: relative;
+}
+/*-- footer end --*/
